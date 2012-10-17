@@ -31,10 +31,11 @@
              <div class="wrapper">
                 <div class="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_option('company_logo'); ?>" border="0" alt="logo" /></a></div>
                     
-                <div class="navigation">
-                    <?php wp_nav_menu( array( 'menu' => 'primary' ) ); ?>
-                </div><!-- end navigation -->
-             </div> <!-- end wrapper -->
+                    <div class="navigation">
+                        <?php wp_nav_menu( array( 'menu' => 'primary' )); ?>
+<?php echo "change"; ?>
+                    </div><!-- end navigation -->
+                </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
          
              
