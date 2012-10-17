@@ -25,8 +25,21 @@
     if ( is_admin() && isset($_GET['activated'] ) && $pagenow == "themes.php" ) {
 	wp_redirect( 'themes.php?page=theme-options' );
     }
+   
     
-    add_theme_support( 'post-thumbnails' );
+    /* 
+     * Add theme suppor for post thumbnails,
+     * this also allow you to add a custom 
+     * thumnail value, 
+     * 
+     * uncomment the add_image_size bellow
+     * and change accordingly
+     */
+    
+    if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+        //add_image_size( 'post-thumbnail', 245, 186, true ); //(cropped)  
+    }
     
     
 
