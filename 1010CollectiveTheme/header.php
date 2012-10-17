@@ -33,6 +33,7 @@
                     
                     <div class="navigation">
                         <?php wp_nav_menu( array( 'menu' => 'primary' )); ?>
+<?php echo "change"; ?>
                     </div><!-- end navigation -->
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
