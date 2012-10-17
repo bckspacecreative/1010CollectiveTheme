@@ -10,13 +10,14 @@ require ( get_template_directory() . '/includes/functions.php' );
 require ( get_template_directory() . '/includes/classes/class.Options.php' );
 
 
+
 /** 
  * Theme Specific Function can be included bellow 
  */
 
     /** -----------------------------------------------------
      * Creating a few custom post types 
-     * And a few taxonomies
+     * And a few taxonomies.
      * ------------------------------------------------------
      */
 
